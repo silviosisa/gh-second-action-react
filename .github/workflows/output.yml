@@ -1,0 +1,8 @@
+name: Output information
+on: workflow_distpatch
+jobs: 
+  info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Otpu GitHub context
+        run: echo "${{ toJSON(github) }}"
